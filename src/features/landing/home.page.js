@@ -1,4 +1,4 @@
-export default function Login() {
+export default function Home() {
   return (
     <div>
       <h1 className="text-3xl font-bold font-montserrat underline text-primary">
