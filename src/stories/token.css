@@ -1,0 +1,26 @@
+
+:root {
+/**
+ * @tokens Colors
+ * @presenter Color
+ */
+--primary:#00bcd4;
+--secondary:#ff9800;
+
+/**
+ * @tokens Font Families
+ * @presenter FontFamily
+ */
+--montserrat:'Montserrat', sans-serif;
+
+/**
+ * @tokens Font Sizes
+ * @presenter FontSize
+ */
+--xl:38px;
+--lg:32px;
+--md:24px;
+--sm:20px;
+--xs:16px;
+
+}

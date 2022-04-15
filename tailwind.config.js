@@ -12,6 +12,9 @@ module.exports = {
     fontFamily: {
       ...theme.fonts,
     },
+    fontSize: {
+      ...theme.fontSize,
+    },
   },
   plugins: [],
 };
