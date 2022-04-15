@@ -4,14 +4,17 @@
  * @tokens Colors
  * @presenter Color
  */
---primary:#00bcd4;
---secondary:#ff9800;
+--red:#A0042D;
+--yellow:#FFD53D;
+--black:#040F0F;
+--white:#FFFAFA;
 
 /**
  * @tokens Font Families
  * @presenter FontFamily
  */
 --montserrat:'Montserrat', sans-serif;
+--dancingScript:'Dancing Script', cursive;
 
 /**
  * @tokens Font Sizes
@@ -23,4 +26,19 @@
 --sm:20px;
 --xs:16px;
 
-}
+/**
+* @tokens Borders
+* @presenter Border
+*/
+--none:0px solid black;
+--s:1px solid black;
+--m:3px solid black;
+--l:6px solid black;
+
+/**
+* @tokens Spacings
+* @presenter Spacing
+*/
+--padding:4px 12px;
+
+} 
