@@ -1,0 +1,56 @@
+
+/**
+ * @tokens Colors
+ * @presenter Color
+ */
+$red:#A0042D;
+$yellow:#FFD53D;
+$black:#040F0F;
+$white:#FFFAFA;
+
+/**
+ * @tokens Font Families
+ * @presenter FontFamily
+ */
+$font-montserrat:'Montserrat', sans-serif;
+$font-dancingScript:'Dancing Script', cursive;
+
+/**
+ * @tokens Font Sizes
+ * @presenter FontSize
+ */
+$text-xl:38px;
+$text-lg:32px;
+$text-md:24px;
+$text-sm:20px;
+$text-xs:16px;
+
+/**
+* @tokens Borders
+* @presenter Border
+*/
+$border-none:0px solid black;
+$border-s:1px solid black;
+$border-m:3px solid black;
+$border-l:6px solid black;
+
+/**
+ * @tokens Border Radius
+ * @presenter BorderRadius
+ */
+$rounded-btn:25px;
+
+/**
+* @tokens Spacings
+* @presenter Spacing
+*/
+$p-default:4px 12px;
+
+/**
+ * @tokens Font Weights
+ * @presenter FontWeight
+ */
+$font-light:300;
+$font-regular:400;
+$font-medium:500;
+$font-bold:700;

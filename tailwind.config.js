@@ -15,6 +15,18 @@ module.exports = {
     fontSize: {
       ...theme.fontSize,
     },
+    borderWidth: {
+      ...theme.borders,
+    },
+    borderRadius: {
+      ...theme.borderRadius,
+    },
+    spacing: {
+      ...theme.spacings,
+    },
+    fontWeight: {
+      ...theme.fontWeight,
+    },
   },
   plugins: [],
 };

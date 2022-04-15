@@ -1,3 +1,3 @@
 module.exports = {
-    padding : "4px 12px",
-}
+  default: "4px 12px",
+};

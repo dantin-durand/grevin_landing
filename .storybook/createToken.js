@@ -2,13 +2,12 @@ const write = require("write");
 const theme = require("../src/themes/");
 
 let formatedColot = `
-:root {
 /**
  * @tokens Colors
  * @presenter Color
  */
 ${Object.keys(theme.colors)
-  .map((key) => "--" + key + ":" + theme.colors[key])
+  .map((key) => "$" + key + ":" + theme.colors[key])
   .join(";\n")};
 
 /**
@@ -16,7 +15,7 @@ ${Object.keys(theme.colors)
  * @presenter FontFamily
  */
 ${Object.keys(theme.fonts)
-  .map((key) => "--" + key + ":" + theme.fonts[key])
+  .map((key) => "$font-" + key + ":" + theme.fonts[key])
   .join(";\n")};
 
 /**
@@ -24,7 +23,7 @@ ${Object.keys(theme.fonts)
  * @presenter FontSize
  */
 ${Object.keys(theme.fontSize)
-  .map((key) => "--" + key + ":" + theme.fontSize[key])
+  .map((key) => "$text-" + key + ":" + theme.fontSize[key])
   .join(";\n")};
 
 /**
@@ -32,7 +31,15 @@ ${Object.keys(theme.fontSize)
 * @presenter Border
 */
 ${Object.keys(theme.borders)
-  .map((key) => "--" + key + ":" + theme.borders[key] + " solid black")
+  .map((key) => "$border-" + key + ":" + theme.borders[key] + " solid black")
+  .join(";\n")};
+
+/**
+ * @tokens Border Radius
+ * @presenter BorderRadius
+ */
+${Object.keys(theme.borderRadius)
+  .map((key) => "$rounded-" + key + ":" + theme.borderRadius[key])
   .join(";\n")};
 
 /**
@@ -40,10 +47,16 @@ ${Object.keys(theme.borders)
 * @presenter Spacing
 */
 ${Object.keys(theme.spacings)
-  .map((key) => "--" + key + ":" + theme.spacings[key])
+  .map((key) => "$p-" + key + ":" + theme.spacings[key])
   .join(";\n")};
 
-} 
+/**
+ * @tokens Font Weights
+ * @presenter FontWeight
+ */
+${Object.keys(theme.fontWeight)
+  .map((key) => "$font-" + key + ":" + theme.fontWeight[key])
+  .join(";\n")};
 `;
 
-write.sync("src/stories/token.css", formatedColot, { newline: true });
+write.sync("src/stories/token.scss", formatedColot, { newline: true });
