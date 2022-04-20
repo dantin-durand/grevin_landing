@@ -1,0 +1,86 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs";
+import { DesignTokenDocBlock } from "storybook-design-token/dist/doc-blocks";
+
+<Meta title="Design Tokens/Animations" />
+
+# Les Durées d’Animations
+
+<br />
+
+## Animation
+
+- Visez un délai de première interaction rapide de 300 ms ou moins avec le contenu ou les données primaires.
+- Utilisez l'animation sur le premier CTA.
+- Utilisez plus d'animations initiées par l'utilisateur que par le système.
+- Utilisez notre palette de styles d'animation, de fonctions d'accélération et de variables de synchronisation
+
+`@media (max-width: 576px) { ... }`
+
+## When to use and when not to use
+
+<div class="two-columns">
+  <div>
+    <h4 class="text-green">when to use</h4>
+    <ul>
+      <li>
+        Visez un <b>délai rapide pour la première interaction</b> et déterminez
+        si l'entrée stylisée semble plus lente que le chargement instantané du
+        contenu.
+      </li>
+      <li>
+        Utilisez une{" "}
+        <b>
+          direction et un mouvement cohérents par rapport à l'environnement
+          local
+        </b>{" "}
+        pour renforcer le contexte et les métaphores de l'interface utilisateur.
+      </li>
+      <li>
+        Pour les entrées, les sorties et les décorations,{" "}
+        <b>le style d'animation doit être trés subtil</b>.
+      </li>
+      <li>
+        Évitez les rebonds ou les dépassements. Nous faisons des exceptions
+        lorsque le rebond ou le dépassement est lié à l'effet d'animation ou au
+        comportement lui-même.
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h4 class="text-red">when not to use</h4>
+    <ul>
+      <li>
+        Règles de contenu.{" "}
+        <b>Attirez l'attention sur le contenu et les données importants</b>, et
+        non sur les contrôles d'interface.
+      </li>
+      <li>
+        <b>Évitez d'empêcher les gens d'accéder à leur contenu</b> avec des
+        entrées chronophages ou voyantes.
+      </li>
+      <li>
+        <b>Évitez les mouvements contradictoires</b> qui brisent les métaphores
+        de l'interface utilisateur, comme un élément entrant avec un fondu et un
+        glissement et sortant avec une échelle.
+      </li>
+      <li>
+        <b>
+          Évitez les entrées nettes et visibles qui détournent l'attention du
+          contenu
+        </b>{" "}
+        vers l'animation elle-même.
+      </li>
+      <li>
+        <b>Évitez les animations trop rebondissantes</b> qui ternissent notre
+        marque digne de confiance.
+      </li>
+    </ul>
+  </div>
+</div>
+
+## Animation Design Tokens
+
+- A definir, cubic beziers duration css etc
+- multiple states: instant, imediate, fast, slow
+
+`@media (max-width: 576px) { ... }`

@@ -15,7 +15,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "node ./.storybook/createToken.js && start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=c5cd20f3b47f"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -55,6 +56,7 @@
     "@storybook/react": "^6.4.22",
     "@storybook/testing-library": "^0.0.9",
     "autoprefixer": "^10.4.2",
+    "chromatic": "^6.5.4",
     "postcss": "^8.4.8",
     "postcss-loader": "~3.0.0",
     "storybook-design-token": "^2.1.0",

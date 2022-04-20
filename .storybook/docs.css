@@ -1,0 +1,45 @@
+.pictures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.pictures > img {
+  width: 200px;
+  height: auto;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: fit-content;
+  padding: 10px 15px;
+}
+
+.icons > img {
+  width: auto;
+  height: 40px;
+  text-align: center;
+}
+
+.bg-gray {
+  background-color: #c4c4c4;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.text-green {
+  color: #5ec768 !important;
+  font-weight: bold;
+}
+
+.text-red {
+  color: #f63a3a !important;
+  font-weight: bold;
+}
