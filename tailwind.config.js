@@ -23,12 +23,16 @@ module.exports = {
       ...theme.borderRadius,
       ...defaultTheme.borderRadius,
     },
+    borderColor: {
+      ...defaultTheme.borderColor,
+    },
     spacing: {
       ...theme.spacings,
       ...defaultTheme.spacing,
     },
     fontWeight: {
       ...theme.fontWeight,
+      ...defaultTheme.fontWeight,
     },
   },
   plugins: [],
