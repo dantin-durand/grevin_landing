@@ -1,11 +1,11 @@
-import Formules from "./_components/formules/formules";
 import Header from "./_components/header/header";
+import Subscriptions from "./_components/subscriptions/subscriptions";
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <Formules />
+      <Subscriptions />
     </div>
   );
 }
