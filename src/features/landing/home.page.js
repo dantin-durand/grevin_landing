@@ -1,9 +1,11 @@
+import Formules from "./_components/formules/formules";
+import Header from "./_components/header/header";
+
 export default function Home() {
   return (
     <div>
-      <h1 className="text-3xl font-bold font-montserrat underline text-primary">
-        Hello world!
-      </h1>
+      <Header />
+      <Formules />
     </div>
   );
 }

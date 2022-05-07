@@ -1,5 +1,5 @@
 const theme = require("./src/themes/");
-const defaultColors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -7,7 +7,7 @@ module.exports = {
     extend: {},
     colors: {
       ...theme.colors,
-      ...defaultColors,
+      ...defaultTheme.colors,
     },
     fontFamily: {
       ...theme.fonts,
@@ -17,12 +17,15 @@ module.exports = {
     },
     borderWidth: {
       ...theme.borders,
+      ...defaultTheme.borderWidth,
     },
     borderRadius: {
       ...theme.borderRadius,
+      ...defaultTheme.borderRadius,
     },
     spacing: {
       ...theme.spacings,
+      ...defaultTheme.spacing,
     },
     fontWeight: {
       ...theme.fontWeight,

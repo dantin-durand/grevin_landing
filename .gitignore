@@ -10,6 +10,7 @@
 
 # production
 /build
+/storybook-static
 
 # misc
 .DS_Store
@@ -21,5 +22,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+build-storybook.log*
 yarn.lock
 package-lock.json
