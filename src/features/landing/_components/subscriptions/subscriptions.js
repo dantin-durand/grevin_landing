@@ -1,20 +1,12 @@
 import subscriptionTypes from "utils/subscriptionTypes"
+import SubscriptionsDisclaimer from "./subscriptionsDisclaimer"
+import SubscriptionsHeader from "./subscriptionsHeader"
 import SubscriptionType from "./subscriptionType"
 
 export default function Subscriptions() {
     return (
         <div style={subscriptionsContainer}>
-            {/* Title and sub title */}
-            <div className="pt-4">
-                <div className="flex justify-center items-center">
-                    <img src="/assets/pictures/new-label-yellow.png"/>
-                    <h1 class="font-dancingScript text-xl text-white pt-10 -ml-24">ABONNEMENTS</h1>
-                </div>
-                <div className="w-full">
-                    <h3 className="text-center text-lg text-white font-montserrat">Ne rate pas ta Star, prends vite ton abonnement !</h3>
-                </div>
-            </div>
-
+            <SubscriptionsHeader />
             {/* Subscription type */}
             <div className="mt-4 flex items-end justify-center mb-4">
                 <div className="grid grid-rows-1 grid-cols-3 gap-20 w-9/12 items-end">
@@ -23,12 +15,7 @@ export default function Subscriptions() {
                     })}
                 </div>
             </div>
-
-            {/* Disclaimer */}
-            <div className="flex flex-col items-center justify-center text-white font-montserrat">
-                <h3 className="text-lg">*Tarif entrée basique 25€</h3>
-                <p className="text-md">Et accès uniquement aux expositions permanentes</p>
-            </div>
+            <SubscriptionsDisclaimer />
         </div>
     )
 }
