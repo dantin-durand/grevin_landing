@@ -16,12 +16,18 @@ export default function Subscriptions() {
             </div>
 
             {/* Subscription type */}
-            <div className="mt-4 flex items-end justify-center">
+            <div className="mt-4 flex items-end justify-center mb-4">
                 <div className="grid grid-rows-1 grid-cols-3 gap-20 w-9/12 items-end">
                     {subscriptionTypes.map((subscriptionType, index) => {
                         return <SubscriptionType key={index} {...subscriptionType}/>
                     })}
                 </div>
+            </div>
+
+            {/* Disclaimer */}
+            <div className="flex flex-col items-center justify-center text-white font-montserrat">
+                <h3 className="text-lg">*Tarif entrée basique 25€</h3>
+                <p className="text-md">Et accès uniquement aux expositions permanentes</p>
             </div>
         </div>
     )
