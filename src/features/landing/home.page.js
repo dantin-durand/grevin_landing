@@ -1,5 +1,6 @@
 import Header from "./_components/header/header";
 import Map from "./_components/map/map";
+import Newsletter from "./_components/newsletter/newsletter";
 import Subscriptions from "./_components/subscriptions/subscriptions";
 
 export default function Home() {
@@ -9,9 +10,7 @@ export default function Home() {
       <Subscriptions />
       <div className="grid grid-rows-1 grid-cols-2 -mt-40">
         <Map />
-        <div>
-          Newsletter
-        </div>
+        <Newsletter />
       </div>
     </div>
   );
