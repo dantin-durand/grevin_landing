@@ -24,4 +24,5 @@ const subscriptionsContainer = {
     backgroundImage: `url("/assets/waves/waves-sections/abonnements_background.svg")`,
     backgroundSize: '92%',
     backgroundRepeat: 'no-repeat',
+    height: '153vh',
 }
