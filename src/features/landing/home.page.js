@@ -1,3 +1,4 @@
+import Footer from "./_components/footer/footer";
 import Header from "./_components/header/header";
 import Map from "./_components/map/map";
 import Newsletter from "./_components/newsletter/newsletter";
@@ -12,6 +13,7 @@ export default function Home() {
         <Map />
         <Newsletter />
       </div>
+      <Footer />
     </div>
   );
 }
