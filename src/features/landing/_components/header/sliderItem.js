@@ -1,3 +1,4 @@
+import { Button, ButtonWavesYellow } from "components/atoms";
 import joinClasses from "helpers/joinClasses";
 import { useState } from "react";
 
@@ -72,10 +73,10 @@ export default function SliderItem({ item = {}, hidden = true, prev, next }) {
           </h1>
           <p className="mb-16">{item.description}</p>
 
-          <button className="flex gap-2 items-center p-default rounded-full bg-red text-white">
+          <ButtonWavesYellow className="flex gap-2 items-center bg-red text-white">
             <img src="/assets/icons/info.svg" alt="info" />
             <p>Voir plus</p>
-          </button>
+          </ButtonWavesYellow>
 
           <div className="mt-[100px] flex justify-between">
             <div>

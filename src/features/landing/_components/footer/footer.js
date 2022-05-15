@@ -91,5 +91,5 @@ const footerStatue = {
   backgroundSize: "35%",
   backgroundRepeat: "no-repeat",
   height: "93vh",
-  backgroundPosition: "center",
+  backgroundPosition: "center bottom",
 };

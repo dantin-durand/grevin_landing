@@ -1,3 +1,5 @@
+import { ButtonWavesRed, ButtonWavesYellow } from "components/atoms";
+
 export default function SubscriptionType({
   isHighlighted = false,
   title = "",
@@ -46,9 +48,10 @@ export default function SubscriptionType({
         <h3 className="text-center font-dancingScript font-bold text-lg">
           {price}€/mois
         </h3>
-        <button className="mt-4 border-2 border-red rounded-full px-6 py-1 font-montserrat text-xs font-medium">
+
+        <ButtonWavesYellow className="mt-4 border-s border-red hover:border-yellow !px-6 ">
           Souscrire
-        </button>
+        </ButtonWavesYellow>
       </div>
     </div>
   );
