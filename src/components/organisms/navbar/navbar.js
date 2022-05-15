@@ -3,8 +3,8 @@ import navbarItems from "utils/navbar";
 
 export default function Navbar() {
   return (
-    <nav className="flex flex-col">
-      <div className="flex justify-between bg-black fixed w-full h-[70px] items-center px-10">
+    <nav className="flex flex-col z-30">
+      <div className="flex justify-between bg-black fixed w-full h-[70px] items-center px-10 z-30">
         <button className="flex gap-2 text-white items-center">
           <img src="/assets/icons/burger.svg" alt="" />
           <p>Menu</p>
