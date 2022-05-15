@@ -4,12 +4,14 @@ import Newsletter from "./_components/newsletter/newsletter";
 import Subscriptions from "./_components/subscriptions/subscriptions";
 import Navbar from "../../components/organisms/navbar/navbar";
 import Header from "./_components/header/header";
+import Characters from "./_components/characters/characters";
 
 export default function Home() {
   return (
     <div className="font-montserrat">
       <Navbar />
       <Header />
+      <Characters />
       <Subscriptions />
       <div className="grid grid-rows-1 grid-cols-2 -mt-40">
         <Map />
