@@ -21,7 +21,7 @@ export default function SliderItem({ item = {}, hidden = true, prev, next }) {
   return (
     <div
       className={joinClasses(
-        "max-h-[80vh] h-full transition-all fadeIn",
+        "max-h-[80vh] h-full transition-all ",
         hidden && "hidden"
       )}
     >
@@ -67,7 +67,7 @@ export default function SliderItem({ item = {}, hidden = true, prev, next }) {
             </button>
           </div>
         </div>
-        <div className="w-full max-w-[700px]">
+        <div className="w-full max-w-[700px] fadeIn">
           <h1 className="text-xl font-bold text-[60px] leading-[62px] mb-5">
             {item.title}
           </h1>

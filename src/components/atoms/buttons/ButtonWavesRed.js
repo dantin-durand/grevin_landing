@@ -15,7 +15,10 @@ export function ButtonWavesRed({ children, className, onClick, ...props }) {
       }}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
-      className={joinClasses("p-default rounded-full", className)}
+      className={joinClasses(
+        "p-default rounded-full transition-all ease-in-out duration-300",
+        className
+      )}
       onClick={onClick}
       {...props}
     >
