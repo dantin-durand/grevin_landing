@@ -45,7 +45,7 @@ export default function Characters() {
         Ta Star est là ? Viens vite partager de bons souvenirs !
       </p>
 
-      <div className="flex gap-10 mt-[150px] justify-center">
+      <div className="flex flex-col md:flex-row gap-10 mt-[150px] justify-center">
         <SliderCharacters
           list={permanentSlider}
           title="Personnages Permanents"

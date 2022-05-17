@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <Characters />
       <Subscriptions />
-      <div className="grid grid-rows-1 grid-cols-2 -mt-40">
+      <div className="grid grid-rows-1 lg:grid-cols-2 lg:-mt-40">
         <Map />
         <Newsletter />
       </div>

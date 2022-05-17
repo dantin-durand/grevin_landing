@@ -1,3 +1,4 @@
+import { Button, ButtonWavesYellow } from "components/atoms";
 import joinClasses from "helpers/joinClasses";
 import { useState } from "react";
 
@@ -17,14 +18,15 @@ export default function SliderItem({ item = {}, hidden = true, prev, next }) {
       next();
     }, 300);
   };
+
   return (
     <div
       className={joinClasses(
-        "max-h-[80vh] h-full transition-all fadeIn",
+        "max-h-[80vh] h-full transition-all max-w-[100vw] overflow-hidden",
         hidden && "hidden"
       )}
     >
-      <div className="absolute top-0 left-0  h-full">
+      <div className="absolute top-0 left-0 max-w-[100vw] overflow-hidden h-full">
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -43,8 +45,8 @@ export default function SliderItem({ item = {}, hidden = true, prev, next }) {
         </svg>
       </div>
 
-      <div className="w-full h-[80vh] flex items-center gap-16 pr-[100px]">
-        <div className="w-full max-w-[500px] ml-[200px]">
+      <div className="w-full h-[80vh] flex items-center gap-16 px-10 lg:pl-0 lg:pr-[100px]">
+        <div className="w-full max-w-[500px] ml-[200px] hidden lg:block">
           <img
             src={item.image}
             alt=""
@@ -66,35 +68,54 @@ export default function SliderItem({ item = {}, hidden = true, prev, next }) {
             </button>
           </div>
         </div>
-        <div className="w-full max-w-[700px]">
+        <div className="w-full max-w-[700px] fadeIn text-white lg:text-black">
           <h1 className="text-xl font-bold text-[60px] leading-[62px] mb-5">
             {item.title}
           </h1>
           <p className="mb-16">{item.description}</p>
 
-          <button className="flex gap-2 items-center p-default rounded-full bg-red text-white">
+          <ButtonWavesYellow className="flex gap-2 items-center bg-red text-white">
             <img src="/assets/icons/info.svg" alt="info" />
             <p>Voir plus</p>
-          </button>
+          </ButtonWavesYellow>
 
-          <div className="mt-[100px] flex justify-between">
+          <div className="mt-[100px] flex justify-between ">
             <div>
               <h3 className="uppercase font-bold leading-4">Date</h3>
-              <p className="text-red font-medium">{item.date}</p>
+              <p className="text-gray-200 lg:text-red font-medium">
+                {item.date}
+              </p>
             </div>
             <div>
               <h3 className="uppercase font-bold leading-4">Prix éntrée</h3>
-              <p className="text-red font-medium">{item.price}</p>
+              <p className="text-gray-200 lg:text-red font-medium">
+                {item.price}
+              </p>
             </div>
             <div>
               <h3 className="uppercase font-bold leading-4">Invités</h3>
 
               {item.guests.map((guest, index) => (
-                <p key={index} className="text-red font-medium leading-5">
+                <p
+                  key={index}
+                  className="text-gray-200 lg:text-red font-medium leading-5"
+                >
                   {guest}
                 </p>
               ))}
             </div>
+          </div>
+          <div className="flex items-center gap-10 z-10 w-full justify-start pr-6">
+            <button onClick={handlePrev} className="cursor-pointer">
+              <img src="/assets/icons/prev.svg" alt="prev" />
+            </button>
+            <button onClick={handleNext}>
+              <img
+                src="/assets/icons/prev.svg"
+                alt="next"
+                className="rotate-180"
+              />
+            </button>
           </div>
         </div>
       </div>
