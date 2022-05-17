@@ -57,20 +57,20 @@ export default function Footer() {
           </div>
         </div>
         <div className="row-start-2 col-start-2 col-end-12 grid grid-rows-1 grid-cols-12">
-          <p className="col-start-1 col-end-3 flex items-center justify-start">
+          <p className="col-span-6 lg:col-start-1 lg:col-end-3 flex items-center justify-start">
             Mentions légales
           </p>
-          <p className="col-start-3 col-end-4 flex items-center justify-center">
+          <p className="col-span-6 lg:col-start-3 lg:col-end-4 flex items-center lg:justify-center justify-end">
             CGV
           </p>
-          <p className="col-start-4 col-end-10 flex items-center justify-center">
+          <p className="mt-5 lg:mt-0 col-span-12 lg:col-start-4 lg:col-end-10 flex items-center lg:justify-center justify-start">
             @Musée Grévin 2022
           </p>
-          <div className="col-start-10 col-end-13 flex flex-row items-center justify-between">
-            <img src="/assets/reseaux/youtube.svg" />
-            <img src="/assets/reseaux/twitter.svg" />
-            <img src="/assets/reseaux/instagram.svg" />
-            <img src="/assets/reseaux/facebook.svg" />
+          <div className="mt-10 mb-5 lg:mb-0 lg:mt-0 col-span-12 lg:col-start-10 lg:col-end-13 flex flex-row items-center justify-between">
+            <img src="/assets/reseaux/youtube.svg" alt="" />
+            <img src="/assets/reseaux/twitter.svg" alt="" />
+            <img src="/assets/reseaux/instagram.svg" alt="" />
+            <img src="/assets/reseaux/facebook.svg" alt="" />
           </div>
         </div>
       </div>

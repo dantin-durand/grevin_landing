@@ -45,7 +45,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <ul className="fixed right-0 top-1/3 flex flex-col gap-5 z-30">
+      <ul className="fixed right-0 top-1/3 flex flex-col gap-5 z-30 ">
         <li>
           <button className="w-[320px] bg-red rounded-l-full py-3 px-8 translate-x-[65%] hover:translate-x-0 transition-all flex items-center gap-10 hover:bg-yellow text-white hover:text-red">
             <svg

@@ -26,7 +26,10 @@ export default function SubscriptionType({
       <div>
         {options.map((option, index) => {
           return (
-            <div className="flex items-center justify-start px-4" key={index}>
+            <div
+              className="flex items-center justify-start px-4 py-3 lg:py-0"
+              key={index}
+            >
               {option.isEnable ? (
                 <img src="/assets/icons/done.svg" />
               ) : (
